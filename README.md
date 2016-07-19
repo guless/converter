@@ -59,9 +59,10 @@ Converter.js 是一个适用于低版本的浏览器编码/解码库。提供 Ba
 - {String} 返回 base16(hex) 编码过的 MD5 哈希值。
 
 ### sha1( string )
+计算给定字符串的 SHA-1 安全哈希值。
 
 **Params:**
 - {String} string 指定需要计算哈希值的字符串。
 
 **Returns:**
-- {String} 返回 base16(hex) 编码过的 SHA-1 哈希值。
+- {String} 返回 base16(hex) 编码过的 SHA-1 安全哈希值。
