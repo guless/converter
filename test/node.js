@@ -104,3 +104,13 @@ assert(sha1("Secure Hash Algorithm"), "d3517cbe39e304a3988dc773fa6f1e71f6ff965e"
 assert(sha1("abcdefghijklmnopqrstuvwxyz"), "32d10c7b8cf96570ca04ce37f2a19d84240d3a89");
 assert(sha1("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"), "761c457bf73b14d27e9e9265c46f4b4dda11f940");
 assert(sha1("12345678901234567890123456789012345678901234567890123456789012345678901234567890"), "50abf5706a150990a08b2c5ea40fa0e585554732");
+
+/// 中文字符测试用例。
+assert(encode("中国", "base16"), "e4b8ade59bbd");
+assert(decode("e4b8ade59bbd", "base16"), "中国");
+
+assert(encode("λβγ", "base16"), "cebbceb2ceb3");
+assert(decode("cebbceb2ceb3", "base16"), "λβγ");
+
+assert(encode("\ud83d\ude00\ud83d\ude01\ud83d\ude02", "base16"), "f09f9880f09f9881f09f9882");
+assert(decode("f09f9880f09f9881f09f9882", "base16"), "\ud83d\ude00\ud83d\ude01\ud83d\ude02");

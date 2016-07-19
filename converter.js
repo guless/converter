@@ -464,7 +464,7 @@ function deutf8( bytes ) {
         
         if ( char >= 0x80 ) {
             if ( (char < 0xC2) || (char > 0xF4) ) { 
-                throw new Error("Invaild utf-8 character. [offset=${start}, char=" + char + "]");
+                throw new Error("Invaild utf-8 character. [offset=" + start + ", char=" + char + "]");
             }
             
             if ( (char & 0xF0) == 0xF0 ) {
@@ -486,7 +486,7 @@ function deutf8( bytes ) {
                 throw new Error("Invaild utf-8 character. [offset=" + start + ", char=" + char + "]");
             }
             
-            if ( total >= input.length ) {
+            if ( total >= bytes.length ) {
                 throw new Error("Encounter an unpaired surrogate. [char=" + char + "]");
             }
             
