@@ -1,6 +1,6 @@
 {
   "name": "guless-converter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "一个用于转换字符串成 Base16/Base32/Base64/MD5/SHA-1 的库，兼容所有浏览器和宿主环境。",
   "main": "converter.js",
   "scripts": {
