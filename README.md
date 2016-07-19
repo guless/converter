@@ -18,7 +18,7 @@ Converter.js 是一个适用于低版本的浏览器编码/解码库。提供 Ba
 - **sha1** 安全哈希值：`sha1(jsString)`
 
 # API Reference
-## encode( string, codec )
+### encode( string, codec )
 将给定的字符串编码成指定格式的数据。
 
 **Params:**
@@ -33,7 +33,7 @@ Converter.js 是一个适用于低版本的浏览器编码/解码库。提供 Ba
 **Returns:**
 - {String} 返回编码后的数据的字符串表示形式。
 
-## decode( string, codec )
+### decode( string, codec )
 将给定的字符串解码成指定格式的数据。
 
 **Params:**
@@ -49,7 +49,7 @@ Converter.js 是一个适用于低版本的浏览器编码/解码库。提供 Ba
 - {String} 返回解码后的数据的字符串表示形式。
 
 
-## md5( string )
+### md5( string )
 计算给定字符串的 MD5 哈希值。
 
 **Params:**
@@ -58,7 +58,7 @@ Converter.js 是一个适用于低版本的浏览器编码/解码库。提供 Ba
 **Returns:**
 - {String} 返回 base16(hex) 编码过的 MD5 哈希值。
 
-## sha1( string )
+### sha1( string )
 
 **Params:**
 - {String} string 指定需要计算哈希值的字符串。
