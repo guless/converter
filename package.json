@@ -1,0 +1,23 @@
+{
+  "name": "guless-converter",
+  "version": "1.0.0",
+  "description": "一个用于转换字符串成 Base16/Base32/Base64/MD5/SHA-1 的库，兼容所有浏览器和宿主环境。",
+  "main": "converter.js",
+  "scripts": {
+    "test": "node ./test/node.js",
+    "build": "uglifyjs ./converter.js -o converter.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guless/converter.git"
+  },
+  "author": "Samlv9@live.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/guless/converter/issues"
+  },
+  "homepage": "https://github.com/guless/converter#readme",
+  "devDependencies": {
+    "uglify-js": "^2.7.0"
+  }
+}
