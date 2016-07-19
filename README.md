@@ -16,6 +16,7 @@ Converter.js 是一个适用于低版本的浏览器编码/解码库。提供 Ba
 - **Base64** 编码/解码: `encode(jsString, "base64")` / `decode(base64String, "base64")`
 - **md5** 消息摘要：`md5(jsString)`
 - **sha1** 安全哈希值：`sha1(jsString)`
+
 *更多例子：[test/node.js](./test/node.js)*
 
 # API Reference
