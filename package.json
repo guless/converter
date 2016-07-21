@@ -7,11 +7,12 @@
     "test": "node ./test/node.js",
     "test_md5": "node ./test/node_md5.js",
     "test_sha1": "node ./test/node_sha1.js",
-    "build": "npm run conv:build && npm run md5:build && npm run sha1:build && npm run base:build",
+    "build": "npm run conv:build && npm run md5:build && npm run sha1:build && npm run base:build && npm run base64:build",
     "conv:build": "uglifyjs ./converter.js -o converter.min.js -m -c",
     "md5:build": "uglifyjs ./md5.js -o md5.min.js -m -c",
     "sha1:build": "uglifyjs ./sha1.js -o sha1.min.js -m -c",
-    "base:build": "uglifyjs ./base.js -o base.min.js -m -c"
+    "base:build": "uglifyjs ./base.js -o base.min.js -m -c",
+    "base64:build": "uglifyjs ./base64.js -o base64.min.js -m -c"
   },
   "repository": {
     "type": "git",
