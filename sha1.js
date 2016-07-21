@@ -226,7 +226,7 @@ function SHA1_transfrom( bytes, digest ) {
 /// ==============================================================================
 if ( typeof define == "function" && define.amd ) {
     /// AMD Modules
-    define(function() { return sha; });
+    define(function() { return sha1; });
 }
 
 else if ( typeof exports != "undefined" && typeof module != "undefined" ) {
