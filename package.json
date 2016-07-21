@@ -5,7 +5,7 @@
   "main": "converter.js",
   "scripts": {
     "test": "node ./test/node.js",
-    "build": "uglifyjs ./converter.js -o converter.min.js"
+    "build": "uglifyjs ./converter.js -o converter.min.js -m -c"
   },
   "repository": {
     "type": "git",
